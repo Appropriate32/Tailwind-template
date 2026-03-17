@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@layer utilities {
+  @keyframes hardBlink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: hardBlink 1s step-end infinite;
+  }
+}
